@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+p,
+div,
+button,
+h1 {
+  font-family: "Open Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:link {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:visited {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.margin {
+  margin: 0 220px;
+}
+.list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.marginBottom {
+  margin-bottom: 10px;
+}
+
+.titleCharacterComics {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.picture {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* HEADER */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 5px;
+  background-color: black;
+}
+
+.logo-marvel {
+  height: 90px;
+  margin-left: 220px;
+}
+
+.navigation {
+  font-size: 30px;
+  color: white;
+}
+.navigation:last-child {
+  margin-right: 220px;
+}
+
+/* LIST OF CHARACTERS */
+
+.characterBox {
+  width: 270px;
+  height: 400px;
+  padding: 5px;
+  background-color: black;
+  border-radius: 5px;
+  margin: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.favoritePicture {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.favoriteButton {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* LIST OF COMICS */
+
+.comicsBox {
+  width: 550px;
+  height: 700px;
+  padding: 5px;
+  background-color: black;
+  border-radius: 5px;
+  margin: 10px;
+  color: white;
+}
+
+/* SEARCHBAR */
+.searchbar {
+  width: 500px;
+  height: 30px;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  margin-top: 30px;
 }
